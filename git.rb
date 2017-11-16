@@ -1,8 +1,7 @@
 module Git
-  def self.git_cmd(cmd)
+  def self.puts_git(cmd)
     puts `git #{cmd} -h`
   end
-end
 
   def self.config
     puts `git config -l`

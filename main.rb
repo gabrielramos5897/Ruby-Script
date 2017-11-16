@@ -6,8 +6,8 @@ def self.menu
   choice = gets.to_i
   case choice
   when 1
-  puts 'Enter git command'.colorize(:green)
-  Git.git_cmd(gets.strip)
+    puts 'Enter git command'.colorize(:green)
+    Git.puts_git(gets.strip)
   when 2
     Git.config
   when 3
